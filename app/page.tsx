@@ -21,29 +21,31 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-950 text-zinc-50 antialiased">
       <main className="mx-auto flex w-full max-w-3xl flex-col gap-12 px-6 py-16 md:gap-16">
         <section className="space-y-5">
-          <p className="text-sm uppercase tracking-[0.3rem] text-emerald-300">
-            Brandon Smith
-          </p>
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <p className="text-sm uppercase tracking-[0.3rem] text-emerald-300">
+              Brandon Smith
+            </p>
+            <div className="flex flex-wrap gap-4 text-base font-medium">
+              <a
+                href="mailto:brandon.smithlf@gmail.com"
+                className="rounded-full bg-white px-6 py-3 text-zinc-950 transition hover:bg-zinc-200"
+              >
+                Say hi
+              </a>
+              <a
+                href="/building"
+                className="rounded-full border border-white/30 px-6 py-3 text-white transition hover:border-white"
+              >
+                Check out my recent projects
+              </a>
+            </div>
+          </div>
           <h1 className="text-5xl font-semibold leading-tight text-white md:text-6xl">
             I love growth.
           </h1>
           <p className="text-lg text-zinc-300">
-            Student. Builder. Runner. Optimist.
+            Student. Builder. Author. Entrepreneur. Friend.
           </p>
-          <div className="flex flex-wrap gap-4 text-base font-medium">
-            <a
-              href="mailto:brandon.smithlf@gmail.com"
-              className="rounded-full bg-white px-6 py-3 text-zinc-950 transition hover:bg-zinc-200"
-            >
-              Say hi
-            </a>
-            <a
-              href="#experience"
-              className="rounded-full border border-white/30 px-6 py-3 text-white transition hover:border-white"
-            >
-              Recent work
-            </a>
-          </div>
         </section>
 
         <section className="space-y-4">
